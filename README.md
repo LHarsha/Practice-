@@ -35,7 +35,7 @@ int main()
     printf("enter marks \n");
     scanf("%d", &a);
    
-   if (a >= 30) 
+   if (a <= 30) 
     {
       printf("pass");
     } 
