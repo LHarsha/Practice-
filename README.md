@@ -23,3 +23,27 @@ int main()
     printf("average of 3 numbers is %d", sum/3);
     return 0;
 }
+
+program to print fail or pass (below 30 marks = fail) using if and else:
+
+#include <stdio.h>
+
+int main()
+{
+
+    int a;
+    printf("enter marks \n");
+    scanf("%d", &a);
+   
+   if (a >= 30) 
+    {
+      printf("pass");
+    } 
+   
+   else 
+    {
+      printf("fail"); 
+    }
+    
+    return 0;
+}
