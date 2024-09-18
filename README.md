@@ -1,7 +1,7 @@
 # Practice-
 C language 
 
-program to print average of three numbers:
+PROGRAM to print average of three numbers:
 
 #include <stdio.h>
 
@@ -24,26 +24,27 @@ int main()
     return 0;
 }
 
-program to print fail or pass (below 30 marks = fail) using if and else:
+PROGRAM to print fail or pass (below 30 marks = fail) using if and else:
 
 #include <stdio.h>
 
 int main()
 {
-
     int a;
-    printf("enter marks \n");
+    printf("enter marks (1-100) \n");
     scanf("%d", &a);
    
-   if (a <= 30) 
+   if (a >= 30 && a == 100) 
     {
       printf("pass");
     } 
-   
-   else 
+   else if (a < 30 && a == 0)
     {
       printf("fail"); 
     }
-    
+   else 
+    {
+      printf("wrong marks");  
+    }
     return 0;
 }
