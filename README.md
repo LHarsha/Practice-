@@ -48,3 +48,34 @@ int main()
     }
     return 0;
 }
+
+PROGRAM to check whether a three digit number is Armstrong number or not (no loops used):
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter 3 digit number \n");
+    scanf("%d", &a);
+    
+    int b = a%10;
+    int c = a/10;
+    int d = c%10;
+    int e = a/100;
+    int f = e%10;
+    
+    int g = b*b*b;
+    int h = d*d*d;
+    int i = f*f*f;
+    
+    if (g+h+i == a)
+     {
+       printf("it is a amstrong number");
+     }
+    else
+     {
+       printf("not an amstrong number");    
+     }
+    return 0;
+}
