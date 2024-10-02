@@ -79,3 +79,27 @@ int main()
      }
     return 0;
 }
+
+PROGRAM to print sum of n-natural numbers:
+
+#include <stdio.h>
+
+int main()
+{
+    int a, i;
+    printf("enter number \n");
+    scanf("%d", &a);
+    
+    int sum = 0;
+    
+    for(i=1; i<=a; i++)
+    {
+      sum += i;
+    }
+    
+    printf("%d \n", sum);
+
+    
+    
+    return 0;
+}
