@@ -86,13 +86,13 @@ PROGRAM to print sum of n-natural numbers:
 
 int main()
 {
-    int a, i;
+    int n, i;
     printf("enter number \n");
-    scanf("%d", &a);
+    scanf("%d", &n);
     
     int sum = 0;
     
-    for(i=1; i<=a; i++)
+    for(i=1; i<=n; i++)
     {
       sum += i;
     }
@@ -100,6 +100,26 @@ int main()
     printf("%d \n", sum);
 
     
+    
+    return 0;
+}
+
+PROGRAM to print table of n-number:
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i;
+    printf("enter number \n");
+    scanf("%d", &n);
+    
+    
+   for (i=1; i<=10; i++) 
+   {
+  
+      printf("%d \n", i*n);   
+   }
     
     return 0;
 }
