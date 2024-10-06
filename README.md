@@ -123,3 +123,25 @@ int main()
     
     return 0;
 }
+
+PROGRAM to print n-number of odd/even numbers:
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i;
+    
+    printf("enter number: ");
+    scanf("%d", &n);
+    
+    for(i=1; i<=n; i++)
+    {
+        if(i%2 == 0) // change it to "if(i%2 != 0)" for n-even nuumbers
+        {
+            continue;
+        }
+        printf("%d \n", i);
+    }
+    return 0;
+}
