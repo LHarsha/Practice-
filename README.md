@@ -167,7 +167,7 @@ int main()
             factorial *= i;  // Multiply factorial by the current value of i
         }
     
-        printf("Factorial of %d is: %lld\n", n, factorial);  // Use %lld for long long type
+        printf("Factorial of %d is: %lld\n", n, factorial);  // Use %lld for long long type (till 65!)
     }
     
     return 0;
