@@ -145,3 +145,30 @@ int main()
     }
     return 0;
 }
+
+PROGRAM to print factorial of a number:
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i;
+    long long factorial = 1;  // Use a larger data type to handle large results
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    if (n < 0)
+        printf("Factorial of negative numbers is undefined.\n");
+    else
+    {
+        for(i = 1; i <= n; i++)
+        {
+            factorial *= i;  // Multiply factorial by the current value of i
+        }
+    
+        printf("Factorial of %d is: %lld\n", n, factorial);  // Use %lld for long long type
+    }
+    
+    return 0;
+}
