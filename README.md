@@ -230,3 +230,40 @@ int main()
      
    return 0;
 }
+
+PROGRAM to print factorial of number using recursions:
+
+#include <stdio.h>
+
+int Ft (int n);
+
+int Ft (int n)
+{
+  
+  if (n<0)
+  {
+      printf ("enter positive number \n");
+      return -1;
+  }
+  
+  if (n==0)
+  {
+    return 1;  
+  }
+  
+  int f = Ft (n-1);
+  int ft = f*n;
+  return ft;
+}
+
+
+int main()
+{
+    int n;
+    printf("enter number \n");
+    scanf("%d", &n);
+    
+    printf ("factorial is %d", Ft(n));
+    
+    return 0;
+}
