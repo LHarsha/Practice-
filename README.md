@@ -267,3 +267,34 @@ int main()
     
     return 0;
 }
+
+PROGRAM to print bigger number using pointers:
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    int *ptr1, *ptr2;
+
+    // Prompt and input first number
+    printf("Enter the first number: ");
+    scanf("%d", &a);
+
+    // Prompt and input second number
+    printf("Enter the second number: ");
+    scanf("%d", &b);
+
+    // Assign addresses to pointers
+    ptr1 = &a;
+    ptr2 = &b;
+
+    // Compare and print the bigger number using pointers
+    if (*ptr2 > *ptr1) {
+        printf("The bigger number is: %d\n", *ptr2);
+    } else {
+        printf("The bigger number is: %d\n", *ptr1);
+    }
+
+    return 0;
+}
