@@ -298,3 +298,44 @@ int main()
 
     return 0;
 }
+
+PROGRAM of a function to count the number of odd numbers in an array:
+
+#include <stdio.h>
+
+int countOdd (int odd[], int n);
+
+int main()
+{
+    int n, i;
+    
+    printf ("enter no. of elements \n");
+    scanf ("%d", &n);
+    
+    int odd[n];
+    
+    printf ("enter %d numbers : \n", n);
+    for (i=0; i<n; i++) 
+    {
+    scanf("%d", &odd[i]);
+    }
+    
+    int count = countOdd(odd, n);
+    
+    printf ("count of odd numbers = %d", count);
+    
+    return 0;
+}
+
+int countOdd (int odd[], int n) 
+{
+    int count = 0;
+  for (int i = 0; i < n; i++)
+  {
+  if (odd[i]%2 != 0) 
+   {
+     count++; 
+   } 
+ 
+  } return count;
+}
