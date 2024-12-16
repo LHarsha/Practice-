@@ -339,3 +339,45 @@ int countOdd (int odd[], int n)
  
   } return count;
 }
+
+PROGRAM of function to reverse the given array:
+
+#include <stdio.h>
+
+void reverseArr(int arr[], int n);
+
+int main()
+{   
+    int i, n, swap;
+    
+    printf("enter no. of digits \n");
+    scanf("%d", &n);
+    
+    int arr[n];
+    
+    printf("enter %d digits \n", n);
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+   
+   reverseArr(arr, n);
+   
+   printf("digits in reverse order: \n");
+   for(i=0; i<n; i++){
+       printf ("%d \n", arr[i]);
+   }
+    return 0;
+}
+
+void reverseArr(int arr[], int n) 
+{
+    int temp;
+    
+    for (int i=0; i<=n/2; i++){
+        int temp = arr[i];
+        arr[i] = arr[n-1-i];
+        arr[n-1-i] =temp;
+        
+    }
+    
+}
