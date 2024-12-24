@@ -381,3 +381,37 @@ void reverseArr(int arr[], int n)
     }
     
 }
+
+
+PROGRAM that takes string input from user using "%c" :
+
+#include <stdio.h>
+
+void getName(char name[], int size);
+
+int main()
+{
+    char name[100];
+    printf("enter name \n");
+    
+    getName(name, 100);
+    printf ("your name is: %s", name);
+
+    return 0;
+}
+
+void getName(char name[], int size)
+{
+    for(int i=0;i<100-1; i++)
+    {
+       scanf("%c", &name[i]);
+       if (name[i]=='\n'){
+           (name[i]='\0');
+           
+           break;
+       }
+    }
+    name[100-1]='\0';
+}
+
+
